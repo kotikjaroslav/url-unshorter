@@ -14,6 +14,7 @@ app.get('/', (req, res) => {
         'url': response.request.res.responseUrl
       })
   }).catch( error => {
+    console.log(error)
     res.json(`something went wrong`)
   })
 })
